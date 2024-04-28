@@ -1,0 +1,61 @@
+{
+  "name": "Broski",
+  "platform": "discord",
+  "key": "MTIzNDE3MzQ1NzkwMjYwNDM1MQ.G49GoT.Ss0kTtt8PHm2LBhqZLCyBJes7WQ6h5ht7TlKpo",
+  "data": {
+    "nodes": [
+      {
+        "id": 1,
+        "data": {},
+        "inputs": {},
+        "outputs": {
+          "action": {
+            "connections": [
+              {
+                "node": 2,
+                "input": "action"
+              }
+            ]
+          }
+        },
+        "position": [
+          0,
+          -195
+        ],
+        "name": "Message Create Event"
+      },
+      {
+        "id": 2,
+        "data": {
+          "content": "Hello World!",
+          "channel_id": "{channelId}"
+        },
+        "inputs": {
+          "action": {
+            "connections": [
+              {
+                "node": 1,
+                "output": "action"
+              }
+            ]
+          }
+        },
+        "outputs": {
+          "action": {
+            "connections": []
+          }
+        },
+        "position": [
+          348,
+          -486
+        ],
+        "name": "Create Channel Message"
+      }
+    ],
+    "comments": []
+  },
+  "online": true,
+  "events": {},
+  "hash": "1571310a6491d013c960a8af80738445679d4e05",
+  "signature": "5e0c2a29a99e291083d78e739ee532270724967f"
+}
